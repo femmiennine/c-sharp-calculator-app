@@ -1,4 +1,4 @@
-# c-sharp-calculator-app
+# c-sharp-syntax-practice
 
 ## This is my first project, a calculator app, using and learning C# syntax. With this, I am also learning how to use Microsoft Visual Studio.
 
