@@ -45,10 +45,36 @@
           
           Console.WriteLine("There once was a man named " + characterName);
           Console.WriteLine("He was " + characterAge + " years old");
+          
+          characterName = "Mike"
+          characterAge = 40
           Console.WriteLine("He really liked the name " + characterName);
           Console.WriteLine("But didn't like being " + characterAge);
           
           Console.ReadLine();
+```
+
+### Data Types.
+
+```
+            string phrase = "Merry Christmas!");
+            char grade = 'A';
+            
+            //int can be a negative value as well
+            int age = 33;
+
+            // float, double, decimal (from least accurate to very accurate like money)
+            double gpa = 1.4;
+            
+            bool isFemale = true;
+            
+            Console.ReadLine();
+```
+
+### Working with Strings
+
+```
+
 ```
 
 ### Arrays.
