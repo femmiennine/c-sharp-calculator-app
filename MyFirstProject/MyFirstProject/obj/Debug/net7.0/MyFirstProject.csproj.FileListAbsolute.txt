@@ -1,0 +1,15 @@
+/Users/frances/Projects/MyFirstProject/MyFirstProject/bin/Debug/net7.0/MyFirstProject
+/Users/frances/Projects/MyFirstProject/MyFirstProject/bin/Debug/net7.0/MyFirstProject.deps.json
+/Users/frances/Projects/MyFirstProject/MyFirstProject/bin/Debug/net7.0/MyFirstProject.runtimeconfig.json
+/Users/frances/Projects/MyFirstProject/MyFirstProject/bin/Debug/net7.0/MyFirstProject.dll
+/Users/frances/Projects/MyFirstProject/MyFirstProject/bin/Debug/net7.0/MyFirstProject.pdb
+/Users/frances/Projects/MyFirstProject/MyFirstProject/obj/Debug/net7.0/MyFirstProject.csproj.AssemblyReference.cache
+/Users/frances/Projects/MyFirstProject/MyFirstProject/obj/Debug/net7.0/MyFirstProject.GeneratedMSBuildEditorConfig.editorconfig
+/Users/frances/Projects/MyFirstProject/MyFirstProject/obj/Debug/net7.0/MyFirstProject.AssemblyInfoInputs.cache
+/Users/frances/Projects/MyFirstProject/MyFirstProject/obj/Debug/net7.0/MyFirstProject.AssemblyInfo.cs
+/Users/frances/Projects/MyFirstProject/MyFirstProject/obj/Debug/net7.0/MyFirstProject.csproj.CoreCompileInputs.cache
+/Users/frances/Projects/MyFirstProject/MyFirstProject/obj/Debug/net7.0/MyFirstProject.dll
+/Users/frances/Projects/MyFirstProject/MyFirstProject/obj/Debug/net7.0/refint/MyFirstProject.dll
+/Users/frances/Projects/MyFirstProject/MyFirstProject/obj/Debug/net7.0/MyFirstProject.pdb
+/Users/frances/Projects/MyFirstProject/MyFirstProject/obj/Debug/net7.0/MyFirstProject.genruntimeconfig.cache
+/Users/frances/Projects/MyFirstProject/MyFirstProject/obj/Debug/net7.0/ref/MyFirstProject.dll
