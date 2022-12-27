@@ -74,7 +74,29 @@
 ### Working with Strings
 
 ```
+            Console.WriteLine("Frances\"Fogarty");
+            Console.WriteLine("Frances\nFogarty");
+            
+            string phrase = "Frances Fogarty" + "is cool"
+            Console.WriteLine(phrase)
+            
+            string phrase = "Frances Fogarty" + "is cool"
+            Console.WriteLine( phrase.Length );
+            Console.WriteLine( phrase.ToUpper() );
+            Console.WriteLine( phrase.Contains("fog") ); // returns true or false value
+            Console.WriteLine( phrase[0]); // tells which character it contains on certain index
+            Console.WriteLine( phrase.IndexOf("Frances") ); // which index position it starts, returns -1 if the char does not exist
+            Console.WriteLine( phrase.Substring(8, 3) ); // returns "Fog"
+            
+            Console.ReadLine();
+```
 
+### Working with Numbers.
+
+```
+            Console.WriteLine( 20 );
+            
+            Console.ReadLine();
 ```
 
 ### Arrays.
