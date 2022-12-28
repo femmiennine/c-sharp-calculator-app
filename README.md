@@ -397,5 +397,190 @@
 ### Building a Guessing Game.
 
 ```
+            class Program 
+            {
+                        static void Main(string[] args)
+                        {
+                                    string secretWord = "family";
+                                    string guess = "";
+                                    int guessCount = 0;
+                                    int guessLimit = 3;
+                                    bool outOfGuesses = false;
+                                    
+                                    while (guess != secretWord && !outOfGuesses)
+                                    {
+                                                if (guessCount < guessLimit)
+                                                {
+                                                            Console.Write("Enter guess: ");
+                                                            guess = Console.ReadLine();
+                                                            guessCount++;
+                                                } else
+                                                {
+                                                            outOfGuesses = true;
+                                                }
 
+                                    }
+                                    
+                                    if (outOfGuesses)
+                                    {
+                                                Console.Write("You Lose!");
+                                    } else
+                                    {
+                                                Console.Write("You Win!");
+                                    }
+
+                              
+                                    Console.ReadLine();
+                        }
+                        
+                        static int cube(int num)
+                        {
+                        }
+            }
+            
+```
+
+### For Loops.
+
+```
+               class Program 
+            {
+                        static void Main(string[] args)
+                        {
+                                    int i = 1;
+                                    while (i <= 5)
+                                    {
+                                                Console.WriteLine(i);
+                                                i++;
+                                    }
+                                    
+                                    for( int i = 1;  i <= 5; i++ )
+                                    {
+                                                Console.WriteLine(i);
+                                    }
+                                    
+                                    Console.ReadLine();
+                        }
+            }         
+```
+```
+               class Program 
+            {
+                        static void Main(string[] args)
+                        {
+                                    int[] luckyNumbers = { 4, 8, 16, 44, 48, 88 };
+                                    for (int i = 0; i < luckyNumbers.Length; i++)
+                                    {
+                                                Console.WriteLine( luckyNumber(i) );
+                                    }
+                        }
+            }   
+```
+
+### Building an Exponent Method.
+
+```
+            class Program 
+            {
+                        static void Main(string[] args)
+                        {
+                                    Console.WriteLine( GetPow(3, 2) );
+                                    Console.ReadLine();
+                        }
+                        
+                        static int GetPow(int baseNum, int powNum)
+                        {
+                                    int result = 1;
+                                    
+                                    for(int i = 0; i < powNum; i++)
+                                    {
+                                                result = result * baseNum;
+                                    }
+                                    
+                                    return result;
+                        }
+            }   
+```
+
+### 2D Arrays.
+
+```
+            class Program 
+            {
+                        static void Main(string[] args)
+                        {
+                                    int[,] numberGrid = { 
+                                      { 1, 2 },
+                                      { 3, 4 },
+                                      { 5, 6 },
+                                    };
+                                    
+                                    int[,] = new myArray[2, 3];
+                                    
+                                    Console.WriteLine(numberGrid[0, 0]); // returns 1, [1, 1] returns 4
+                                    
+                                    Console.ReadLine();
+                        }
+            }  
+```
+
+### Comments.
+
+```
+            This is how you write a comment in C#:
+            
+            // This is a single line comment. 
+            /* This is how 
+            to write 
+            a comment 
+            with multiple 
+            lines. */
+```
+
+### Exception Handling.
+
+```
+            // Exception handling is simply catching exception, in JS it's called "Error Handling"
+            // Try Catch block
+            
+            try
+            {
+                        Console.Write("Enter a number: ");
+                        int num1 = Convert.ToInt32(Console.ReadLine());
+                        Console.Write("Enter another number: ");
+                        int num2 = Convert.ToInt32(Console.ReadLine());
+            
+                        Console.WriteLine(num1 / num2);
+            }
+            catch (DivideByZeroException e) // you can specify an exception and will only catch that exception
+            {
+                        Console.WriteLine(e.Message);
+            }
+            catch (FormatException e)
+            {
+                        Console.WriteLine(e.Message);
+            }
+            finally 
+            {
+                        // all the code in this block will always be executed       
+            }
+
+            // default: catch (Exception e) {}
+            // Check out C# exception list
+            
+            Console.ReadLine();
+```
+
+### Classes & Objects.
+
+```
+            class Program 
+            {
+                        static void Main(string[] args)
+                        {
+                                    // Objects & Classes allows to create own custom data types
+                                    // A Class is just a specification for a new data type
+                                    Console.ReadLine();
+                        }
+            }  
 ```
