@@ -571,16 +571,47 @@
             Console.ReadLine();
 ```
 
-### Classes & Objects.
+### Classes & Objects / Constructors.
 
 ```
+            Book.cs
+            class Book 
+            {
+                                    // Objects & Classes allows to create own custom data types
+                                    // A Class is just a specification for a new data type or blue print and used to model real world entities to be used in the program
+                                    
+                                    public string title;
+                                    public string author;
+                                    public int pages;
+                                    
+                                    public Book(string aTitle, string aAuthor, int aPages) // The Constructor inside of a class
+                                    {
+                                                title = aTitle;
+                                                author = aAuthor;
+                                                pages = aPages;
+                                    }
+            }  
+            
+            Program.cs
             class Program 
             {
                         static void Main(string[] args)
                         {
-                                    // Objects & Classes allows to create own custom data types
-                                    // A Class is just a specification for a new data type
+                                    // Object is an instance of a class
+                                    Book book1 = new Book("Harry Potter", "JK Rowling", 400);
+                                    
+                                    Book book2 = new Book("Lord of the Rings", "Tolkein", 700);;
+                                    
+                                    Console.WriteLine(book2.title);
+                                    
                                     Console.ReadLine();
                         }
             }  
+            
+```
+
+### Constructors.
+
+```
+
 ```
