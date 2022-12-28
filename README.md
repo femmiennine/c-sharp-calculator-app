@@ -610,8 +610,211 @@
             
 ```
 
-### Constructors.
+### Object Methods.
 
 ```
+            // In Student.cs
+            class Student
+            {
+                        public string name;
+                        public string major;
+                        public double gpa;
+                        
+                        public Student(string aName, string aMajor, double aGpa)
+                        {
+                                    name = aName;
+                                    major = aMajor;
+                                    gpa = aGpa;
+                        }
+                        
+                        public bool HasHonors()
+                        {
+                                    if (gpa >= 3.5)
+                                    {
+                                                return true;
+                                    }
+                                    return false;
+                        }
+            }
+            
+            // In Program.cs
+            class Program 
+            {
+                        static void Main(string[] args)
+                        {
+                                    Student student1 = new Student("Jim", "Business", 2.8);
+                                    Student student1 = new Student("Pam", "Art", 3.6);
+                                    
+                                    Console.WriteLine( student1.HasHonors() ); // return false
+                                    Console.WriteLine( student2.HasHonors() ); // return true
+                                    
+                                    Console.ReadLine();
+                        }
+            }  
+```
 
+### Getters and Setters.
+
+```
+            // In Movie.cs
+            class Movie
+            {
+                        public string title;
+                        public string director;
+                        private string rating; // Only code in the movie class can access this
+                        
+                        public Movie(string aTitle, string aDirector, string aRating);
+                        {
+                                    title = aTitle;
+                                    director = aDirector;
+                                    rating = aRating;
+                        }
+                        
+                        public string Rating
+                        {
+                                    get 
+                                    { 
+                                                return rating; 
+                                    }
+                                    set 
+                                    { 
+                                                if (value == "G" || value == "PG" || value == "PG-13" || value == "R" || value == || "NR")
+                                                {
+                                                            rating = value;
+                                                } else {
+                                                            rating = "NR";
+                                                }
+                                    }
+                        }
+            }
+            
+            // In Program.cs
+            class Program 
+            {
+                        static void Main(string[] args)
+                        {
+                                    Movie avengers = new Movie("The Avengers", "Joss Whedon", "PG-13");
+                                    Movie shrek = new Movie("Shrek", "Adam Adamson", "PG");
+                                    
+                                    Console.ReadLine();
+                        }
+            }     
+```
+
+### Static Class.
+
+```
+            // In Song.cs
+            class Song
+            {
+                        public string title;
+                        public string artist;
+                        private int duration;
+                        public static int songCount = 0; // static attribute which belongs to the Class Song
+                        
+                        public Movie(string aTitle, string aArtist, string aDuration);
+                        {
+                                    title = aTitle;
+                                    artist = aArtist;
+                                    duration = aDuration;
+                                    songCount++;
+                        }
+            }
+            
+            // In Program.cs
+            class Program 
+            {
+                        static void Main(string[] args)
+                        {
+                                    Song holiday = new Song("Holiday", "Green Day", 200);
+                                    Console.WriteLine(Song.songCount); // giving info about the class in general not a secific object
+                                    Song kashmir = new Song("Kashmir", "Led Zeppelin", 150);
+                                    Console.WriteLine(Song.songCount); // giving info about the class in general not a secific object
+                                    
+                                    Console.ReadLine();
+                        }
+            }    
+```
+
+### Static Methods & Classes.
+
+```
+            // In Porgram.cs
+            class Program
+            {
+                        static void Main(string[] args)
+                        {
+                                    Console.WriteLine(Math.Sqrt(144)); // static methods is not having to create an instance, a method that belongs to a class
+                                    
+                                    UsefulTools.SayHi("Frances");
+                                    
+                                    Console.ReadLine();
+                        }
+            }
+            
+            // In UsefulTools.cs
+            
+            class UsefulTools
+            {
+                        public static void SayHi(string name)
+                        {
+                                    Console.WriteLine("Hello" + name);
+                        }
+            }
+```
+
+### Inheritance.
+
+```
+            // Inheritance is basically a technique that can be used in C# where we can have a sub class inherit all the functionality of super class
+            
+            // In Porgram.cs
+            class Program
+            {
+                        static void Main(string[] args)
+                        {
+                                    Chef chef = new Chef();
+                                    chef.MakeChicken();
+                                    
+                                    ItalianChef chef = new ItalianChef();
+                                    italianChef.MakeChicken();
+                                    
+                                    Console.ReadLine();
+                        }
+            }
+            
+            // In Chef.cs
+            class Chef
+            {
+                        public void MakeChicken()
+                        {
+                                    Console.WriteLine("The Chef makes chicken");
+                        }
+                        
+                        public void MakeSalad()
+                        {
+                                    Console.WriteLine("The Chef makes salad");
+                        }
+                        
+                        public virtual void MakeSpecialDish() 
+                        // virtual - this method can be overriden in any sub classes
+                        // subclasses can change the functionality of this method
+                        {
+                                    Console.WriteLine("The Chef makes bbq ribs");
+                        }
+            }
+            
+            // In ItalianChef.cs
+            class ItalianChef : Chef // the ItalianChef is going to inherit all functionalities the Chef has
+            {
+                        public override void MakeSpecialDish() // keyword - override
+                        {
+                                    Console.WriteLine("The Chef makes chicken parm");
+                        }
+                        
+                        public void MakePasta()
+                        {
+                                    Console.Write("The Chef makes pasta");
+                        }
+            }
 ```
