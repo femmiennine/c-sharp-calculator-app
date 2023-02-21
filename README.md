@@ -68,6 +68,40 @@
             
             Console.ReadLine();
 ```
+### String Manipulation
+
+```
+            int age = 31;
+            string name = "Frances";
+            string job = "Developer";
+            
+            // 1. String Concatenation
+            Console.WriteLine("String Concatenation");
+            Console.WriteLine("Hello my name is " + name + ", I am " + age + "years old.");
+            
+            // 2. String Formatting
+            // String formatting uses index
+            Console.WriteLine("String Formatting");
+            Console.WriteLine("Hello my name is {0}, I am {1} years old. I'm a {2}.", name, age, job);
+            
+            // 3. String Interpolation
+            // String interpolation uses $ at the start which will allow us to write our variables like this {variableName}
+            Console.WriteLine("String Interpolation");
+            Console.WriteLine($"Hello my name is {name}, I am {age} years old, I am a {job}.");
+            
+            // 4. Verbatim Strings
+            // Verbatim strings start with @ and tells the compiler to take the string literally and ignore any spaces and escape characters like \n
+            Console.WriteLine("Verbatim Strings");
+            Console.WriteLine(@"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magnis dis             parturient montes nascetur ridiculus mus. Suspendisse faucibus interdum posuere lorem ipsum dolor sit amet consectetur. Rutrum quisque non tellus orci. Mi             eget mauris pharetra et ultrices neque ornare aenean. Metus dictum at tempor commodo. Magnis dis parturient montes nascetur ridiculus mus mauris vitae. Leo             urna molestie at elementum. 
+            
+            
+            Et leo duis ut diam. Sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque. Tempus imperdiet nulla malesuada pellentesque elit eget.                 Maecenas ultricies mi eget mauris pharetra et. Libero enim sed faucibus turpis in eu mi bibendum neque. Nibh ipsum consequat nisl vel pretium lectus quam               id. Nibh mauris cursus mattis molestie a iaculis at. Sed blandit libero volutpat sed cras ornare. Sagittis eu volutpat odio facilisis. Quam viverra orci                sagittis eu volutpat odio facilisis mauris sit.");
+            
+            // instead of using \\ to write file paths we can use verbatim strings to make it easier
+            // if you remove the @ you will get an error because \U, \A and \D are not valid escape characters
+            Console.WriteLine(@"C:\User\Admin\Dog Pictures\Dog1\Super CoolDog.png");
+            
+```
 
 ### Working with Strings
 
